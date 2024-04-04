@@ -1,0 +1,105 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #88C8E4;
+    --secondary-color: #F2F9FC;
+    --logo-color: #156182;
+    --dark-color: black;
+    --yellow-color : #F8BD00;
+
+    --h1-font-size: 36px;
+    --h2-font-size: 20px;
+    --regular-font-size: 14;
+    --small-font-size: 10px;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+/* GLOBAL CSS */
+section {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-orange {
+    background-color: var(--yellow-color);
+    color: white;
+}
+
+.btn-orange:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.text-orange {
+    color: var(--primary-color);
+}
+
+.text-dark {
+     color: var(--dark-color);
+}
+
+.fs-7 {
+    font-size: var(--small-font-size);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+/* CSS PER SECTION */
+
+/* NAVBAR */    
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color: var(--dark-color);
+}
+
+
+/* Navbar */
+.navbar-brand {
+    img {
+        margin-right: 13px;
+        margin-bottom: 6px;
+    }
+}
+
+
+/* Header */
+.header-section{
+    background-image: linear-gradient(90deg, var(--primary-color), white);
+}
+
+.header-tittle {
+    font-size: var(--h1-font-size);
+}
+
+/* Kiriman */
+.diskusi-section .container {
+    background: var(--secondary-color);
+}
+
+/* Diskusi */
+.kiriman-section .container {
+    background: var(--secondary-color);
+}
+/* Footer */
+footer {
+    background-color: #030304;
+}
+
+

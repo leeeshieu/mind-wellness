@@ -1,0 +1,76 @@
+/* Style the footer */
+/* footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  } */
+  body{
+    background: linear-gradient(to left, #ffffff, #88C8E4);
+  }
+  .rounded-pill{
+   width: 150px;
+  }
+  nav{
+    background: linear-gradient(to left, #ffffff, #88C8E4);
+  }
+  .image{
+    position: relative;
+    width: 450px;
+    margin-top: -20%;
+    left: 30%;
+  }
+  .image1{
+    margin: 30%;
+    width: 30cm;
+    margin-top: 5%;
+    display: block;
+    height: auto;
+  }
+.col-sm-8 {
+  position: relative;
+  margin-top: 35%;
+  left: 10%;
+  text-align: left;
+  font-size: 22px;
+  color: #2A3E4B;
+
+}
+#toForum {
+  color: white;
+  position: absolute;
+  top: 11%;
+  font-size: 90px;
+  width: 30cm;
+  left: 30%;
+  text-align: center;
+}
+h2 {
+  color: white;
+  position: absolute;
+  top: 51%;
+  font-size: 30px;
+  width: 30cm;
+  left: 30%;
+  text-align: center;
+  font-weight: 200;
+}
+h3 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+.buble{
+  position: relative;
+}
+.nav-item{
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+.active, .nav__link:hover {
+  position: relative;
+  background-color: #000000;
+  color: white;
+  font-weight: 900;
+}
+

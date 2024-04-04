@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: 'Inter';
+        font-size: 16px;
+        margin: none;
+      }
+  
+      *, *::before, *::after {
+          box-sizing: border-box;
+      }
+
+      #bg-blue {
+        background-color: #88C8E4;
+      }
+    </style>
+
+</head>
+<body id="bg-blue">
+    <div class="bg-white w-6/12 mx-auto p-8 mt-20 rounded rounded-xl flex flex-col gap-8">
+        <h1 class="text-3xl font-bold text-center">Upload Forum</h1>
+
+        <div class="flex gap-6 align-start">
+            <img src="./assets/avatar.png" class="w-16 h-16"></img>
+            <div class="w-full flex flex-col gap-3">
+                <input class="w-full p-2 border border-1" placeholder="Berikan judul forum">
+                <textarea class="w-full h-200 p-2 border border-1" placeholder="Berikan pendapat kamu"></textarea>
+            </div>
+        </div>
+
+        <button id="bg-blue" class="w-4/12 mx-auto px-4 py-2 rounded rounded-full font-bold">Kirim Forum</button>
+    </div>
+</body>
+</html>
