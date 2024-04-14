@@ -1,95 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <title>Forum Diskusi</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-  <style>
+  <head>
+    <title>Forum Diskusi</title>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+    <style>
       * {
-        font-family: 'Inter';
+        font-family: "Inter";
         font-size: 16px;
         margin: none;
       }
-  </style>
-  <link rel="stylesheet" href="style/forum.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    var dropdownToggle = document.querySelector('.nav-link.dropdown-toggle');
-    var dropdownMenu = document.querySelector('.dropdown-menu');
+    </style>
+    <link rel="stylesheet" href="style/forum.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var dropdownToggle = document.querySelector(
+          ".nav-link.dropdown-toggle"
+        );
+        var dropdownMenu = document.querySelector(".dropdown-menu");
 
-    dropdownToggle.addEventListener('click', function(event) {
-        event.preventDefault();
-        if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
-        dropdownMenu.style.display = 'block';
-        } else {
-        dropdownMenu.style.display = 'none';
-        }
-    });
+        dropdownToggle.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (
+            dropdownMenu.style.display === "none" ||
+            dropdownMenu.style.display === ""
+          ) {
+            dropdownMenu.style.display = "block";
+          } else {
+            dropdownMenu.style.display = "none";
+          }
+        });
 
-    document.addEventListener('click', function(event) {
-        if (!dropdownMenu.contains(event.target) && !dropdownToggle.contains(event.target)) {
-        dropdownMenu.style.display = 'none';
-        }
-    });
-    });
-  </script>
-</head>
+        document.addEventListener("click", function (event) {
+          if (
+            !dropdownMenu.contains(event.target) &&
+            !dropdownToggle.contains(event.target)
+          ) {
+            dropdownMenu.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-    <a class="navbar-brand">
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between"
+    >
+      <a class="navbar-brand">
         <img height="40" src="assets/logo.png" />
-    </a>
-  
-    <div>
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="beranda.html">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="edukasi_artikel.html">Edukasi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="forum.html">Forum</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Akun
-          </a>
-          <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="edukasi_artikel.html">Akun</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Keluar</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="Forum Diskusi">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="buble">
-          <img src="assets/Buble chat.png" class="image1" alt="Teks alternatif gambar">
-          <a id="toForum" href="list_forum.html">FORUM DISKUSI</a>
-          <h2>Dukungan, Edukasi, Pertanyaan, Pengalaman, Solusi</h2>
-        </div>
-        <div class="fakeimg">
-          <img src="assets/Asset1.png" class="image">
-        </div>
-      </div>
-      <div class="col-sm-8">
-        <h3>About Forum Diskusi?</h3>
-        <p>Tujuan forum diskusi kesehatan mental adalah untuk memberikan<br>
-          tempat aman bagi individu untuk berbagi pengalaman, <br>
-          mendapatkan dukungan, memperoleh pengetahuan,<br>
-          dan menemukan solusi terkait kesehatan mental.</p>
-      </div>
-    </div>
-  </div>
-</body>
+      </a>
 
+      <div>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="beranda.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="edukasi_artikel.html">Edukasi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="forum.html">Forum</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Akun
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="edukasi_artikel.html">Akun</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Keluar</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="Forum Diskusi">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="buble">
+            <img
+              src="assets/Buble chat.png"
+              class="image1"
+              alt="Teks alternatif gambar"
+            />
+            <p id="toForum">FORUM DISKUSI</p>
+            <h2>Dukungan, Edukasi, Pertanyaan, Pengalaman, Solusi</h2>
+          </div>
+          <div class="fakeimg">
+            <img src="assets/Asset1.png" class="image" />
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <h3>About Forum Diskusi?</h3>
+          <p>
+            Tujuan forum diskusi kesehatan mental adalah untuk memberikan<br />
+            tempat aman bagi individu untuk berbagi pengalaman, <br />
+            mendapatkan dukungan, memperoleh pengetahuan,<br />
+            dan menemukan solusi terkait kesehatan mental.
+          </p>
+          <a class="round-button" href="list_forum.html">
+            Pelajari Selengkapnya
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

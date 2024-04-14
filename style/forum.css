@@ -5,36 +5,35 @@
     text-align: center;
     color: white;
   } */
-  body{
-    background: linear-gradient(to left, #ffffff, #88C8E4);
-  }
-  .rounded-pill{
-   width: 150px;
-  }
-  nav{
-    background: linear-gradient(to left, #ffffff, #88C8E4);
-  }
-  .image{
-    position: relative;
-    width: 450px;
-    margin-top: -20%;
-    left: 30%;
-  }
-  .image1{
-    margin: 30%;
-    width: 30cm;
-    margin-top: 5%;
-    display: block;
-    height: auto;
-  }
+body {
+  background: linear-gradient(to left, #ffffff, #88c8e4);
+}
+.rounded-pill {
+  width: 150px;
+}
+nav {
+  background: linear-gradient(to left, #ffffff, #88c8e4);
+}
+.image {
+  position: relative;
+  width: 450px;
+  margin-top: -20%;
+  left: 30%;
+}
+.image1 {
+  margin: 30%;
+  width: 30cm;
+  margin-top: 5%;
+  display: block;
+  height: auto;
+}
 .col-sm-8 {
   position: relative;
   margin-top: 35%;
   left: 10%;
   text-align: left;
   font-size: 22px;
-  color: #2A3E4B;
-
+  color: #2a3e4b;
 }
 #toForum {
   color: white;
@@ -59,18 +58,28 @@ h3 {
   font-weight: bolder;
   font-size: 50px;
 }
-.buble{
+.buble {
   position: relative;
 }
-.nav-item{
+.nav-item {
   cursor: pointer;
   color: black;
   font-weight: 500;
 }
-.active, .nav__link:hover {
+.active,
+.nav__link:hover {
   position: relative;
   background-color: #000000;
   color: white;
   font-weight: 900;
 }
-
+.round-button {
+  border-radius: 20px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  background-color: #007bff; /* Default Bootstrap primary color */
+  color: #fff; /* Text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
