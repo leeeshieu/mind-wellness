@@ -11,9 +11,7 @@ body {
 .rounded-pill {
   width: 150px;
 }
-nav {
-  background: linear-gradient(to left, #ffffff, #88c8e4);
-}
+
 .image {
   position: relative;
   width: 450px;
